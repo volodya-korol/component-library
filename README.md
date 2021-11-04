@@ -1,9 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  
-  <img src="" alt="Logo" width="80" height="80">
-
   <p align="center">
     Component Library for Korol Social Network
     <br />

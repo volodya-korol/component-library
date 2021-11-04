@@ -67,7 +67,7 @@ const Icon = ({
 				fill={fill}
 				size={resolveSize(size)}
 				clipRule={icons[icon].clipRule}
-				fillRule={icons[icon].fillRule || "nonzero"}
+				fillRule={icons[icon].fillRule}
 				onClick={() => onClick()}
 				viewBox="0 0 26 26"
 				xmlns="http://www.w3.org/2000/svg">

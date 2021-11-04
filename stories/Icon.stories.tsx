@@ -101,7 +101,7 @@ export const AllIcon = (args: keyof typeof Icon) => {
 			<S.Icons>
 				{Object.keys(icons).map((m) => {
 					return (
-						<S.Icon onClick={() => copy(m as keyof typeof icons)} key={m}>
+						<S.Icon  onClick={() => copy(m)} key={m}>
 							<Icon size={40} {...args} icon={m as keyof typeof icons} />
 							<S.IconDescription>{m}</S.IconDescription>
 						</S.Icon>

@@ -1,7 +1,7 @@
 {
   "name": "korol-social-network-component-library",
   "author": "Volodya Korol",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -50,6 +50,7 @@
     "@types/react-dom": "^17.0.8",
     "@types/styled-components": "^5.1.10",
     "babel-loader": "^8.2.2",
+    "chromatic": "^6.0.5",
     "husky": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

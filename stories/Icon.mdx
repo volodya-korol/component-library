@@ -1,0 +1,84 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Icon, theme } from '../src';
+
+<Meta title="Icon" component={Icon} />
+
+# Icon
+
+Icons are needed to speed up the perception of information. This is because people have figurative thinking: if we see an image, it is easier for us to understand the essence.
+
+In types, most concepts are abstractions, so it can be difficult to explain them with icons alone.
+
+If the icon is often found and a certain meaning has been assigned to it, you can leave it without a signature.
+For example, hamburger `☰` is the icon that opens the menu.
+Or a cross `x` - the icon on which the window is closed.
+
+In other cases, it is better to explain the icon with text (add a hint or title).
+
+If you are using an icon without text support, you need to pay particular attention to the metaphor,
+which you put into it. It should be clear to the user at a glance what the icon means
+and what action is hidden behind it.
+
+## Appearance
+
+The `icon` property is responsible for the appearance of the icon.
+
+| `'activity'`             | `'anchor'`             | `'bag'`             | `'#box'`            | `'cart'`             | `'cloudDownload'`             |
+| ------------------------ | ---------------------- | ------------------- | ------------------- | -------------------- | ----------------------------- |
+| <Icon icon="activity" /> | <Icon icon="anchor" /> | <Icon icon="bag" /> | <Icon icon="box" /> | <Icon icon="cart" /> | <Icon icon="cloudDownload" /> |
+
+## Color
+
+The `fill` property is responsible for the color of the icon.
+
+| `'primary'`                                         | `'green'`                                         | `'orange'`                                         |
+| --------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
+| <Icon icon="instagram" fill={theme.color.primary}/> | <Icon icon="instagram" fill={theme.color.green}/> | <Icon icon="instagram" fill={theme.color.orange}/> |
+
+## Size
+
+The `size` property is responsible for the size of the icon - `small`, `medium`, `large` or `number`.
+
+<Icon icon="instagram" fill={theme.color.primary} size="small" />
+<Icon icon="instagram" fill={theme.color.primary} size="medium" />
+<Icon icon="instagram" fill={theme.color.primary} size="large" />
+<Icon icon="instagram" fill={theme.color.primary} size={48} />{" "}
+
+## Handling icons as a block or inline element
+
+The `block` property is responsible for rendering in the text of the icon.
+
+<div>
+  Lorem ipsum dolor sit amet <Icon icon="human" /> consectetur adipisicing elit.
+  Nesciunt <Icon icon="human" block /> aperiam officia veritatis.
+</div>
+
+## Label
+
+The `label` property is responsible for the signature of the icon.
+
+<Icon icon="human" label={['Human', {}]} />
+
+## Actions when pressed
+
+The `onClick` property is responsible for the action when you click on the icon.
+
+<Icon
+  icon="power"
+  style={{ cursor: 'pointer' }}
+  onClick={() => {
+    alert('Hello World');
+  }}
+/>
+
+## API
+
+| Property   | Type                                                                  | Readonly | Description                                    |
+| ---------- | --------------------------------------------------------------------- | -------- | ---------------------------------------------- |
+| `icon`     | `activity` , `alignCenter` , `alignLeft` , `alignRight` , `anchor`... | -        | Appearance icons +                             |
+| `fill?`    | `string`                                                              | primary  | Define the color used to paint the svg element |
+| `style?`   | `React.CSSProperties`                                                 | -        | The style of the svg element                   |
+| `size?`    | `small` , `medium` , `large` , `number`                               | medium   | The size of the svg element                    |
+| `block?`   | `boolean`                                                             | false    | Handling icons as a block or inline element    |
+| `label?`   | `[string, React.CSSProperties]`                                       | -        | Icon signature                                 |
+| `onClick?` | `() => void`                                                          | -        | Actions when you click the icon                |

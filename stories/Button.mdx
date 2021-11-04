@@ -1,0 +1,113 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import { Button,Icon } from '../src';
+
+
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+Button. It is used when a person needs to make a choice, confirm or take some action. For example, send a message, pay for an order, save changes, enter account.
+
+# Appearance
+
+## Button types
+
+The `model` property is responsible for the appearance of the button.
+
+| `'default'`                              | `'primary'`                              | `'secondary'`                               | `'light'`                               | `'dark'`                               |
+| ---------------------------------------- | ---------------------------------------- | ------------------------------------------- | --------------------------------------- | -------------------------------------- |
+| <Button model="default" >Button</Button> | <Button model="primary" >Button</Button> | <Button model="secondary"  >Button</Button> | <Button model="light"  >Button</Button> | <Button model="dark"  >Button</Button> |
+
+## Button shapes
+
+The `shape` property is responsible for the shape of the button.
+
+| `'default'`                                              | `'circle'`                                              | `'round'`                                                                           |
+| -------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <Button model="primary" shape="default" >Button</Button> | <Button model="primary" shape="circle" >Button</Button> | <Button model="primary" shape="round" ><Icon fill="white" icon="flame" /></Button> |
+
+## Size
+
+The `size` property is responsible for the size of the button.
+
+| `'small'`                                       | `'medium'`                                       | `'large'`                                       |
+| ----------------------------------------------- | ------------------------------------------------ | ----------------------------------------------- |
+| <Button size={{type: "small" }}>Button</Button> | <Button size={{type: "medium" }}>Button</Button> | <Button size={{type: "large" }}>Button</Button> |
+
+The `size` property takes an object where in` type` we can specify `small | medium | large` and in `width` if we need it we can specify width of the button
+
+<Button size={{ type: "small", width: 500 }}>Button</Button>
+
+## Icon
+
+The `icon` property is responsible for the icon inside the button
+
+<Button size={{ type: "medium" }} model="primary" shape="circle" icon={[<Icon fill="white" icon="flame" />, "left"]}>
+	Button
+</Button>
+<br />
+<br />
+<Button size={{ type: "medium" }} model="primary" shape="circle" icon={[<Icon fill="white" icon="smile" />, "right"]}>
+	Button
+</Button>
+
+## Type
+
+The `type` property defines a button type that sets its behavior in the form
+
+`button` - Regular button.
+
+`reset` - A button to clear the entered form data and return the values to their original state.
+
+`submit` - Button for sending form data to the server.
+
+## Ghost
+
+The `ghost` property makes the button transparent
+
+<div
+	style={{
+		width: "40px",
+		position: "absolute",
+		height: "40px",
+		backgroundColor: "lightseagreen",
+		marginLeft: 100,
+		marginTop: 20,
+	}}></div>
+<Button model="default" shape="circle" ghost={true}>
+	Button
+</Button>
+
+## Disabled
+
+The `disabled` property determines whether the button is disabled
+
+| `'default'`                                              | `'primary'`                                              | `'secondary'`                                               | `'light'`                                               | `'dark'`                                               |
+| -------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| <Button disabled={true} model="default" >Button</Button> | <Button disabled={true} model="primary" >Button</Button> | <Button disabled={true} model="secondary"  >Button</Button> | <Button disabled={true} model="light"  >Button</Button> | <Button disabled={true} model="dark"  >Button</Button> |
+
+## onClick
+
+The `onClick` property is responsible for the action when you click on the button.
+
+<Button
+	model="secondary"
+	onClick={() => {
+		alert("Hello World");
+	}}
+>Click</Button>
+
+
+# API
+
+| Property    | Type                                                                  | Readonly   | Description                                                            |
+| ----------- | --------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------- |
+| `model?`    | `default` , `primary` , `secondary`, `light` , `dark`                 | -          | Defines the type of the button                                                    |
+| `shape?`    | `default` , `circle` , `round`                                        | `default`  | Defines the shape of the button                         |
+| `size?`     | { `type`: `small` , `medium` , `large` `width?`: `string` , `number`} | `number`}; | Button size                                                                     |
+| `icon?`     | [`React.ReactNode`, `left` , `right`]                                 | -          | inserts an icon into the button                                           |
+| `type?`     | `button` , `submit` , `reset`                                         | `button`   | determines the type of button that determines its behavior in the form |
+| `ghost?`    | `boolean`                                                             | `false`    | The button is transparent                                              |
+| `disabled?` | `boolean`                                                             | `false`    | The button is disabled                                                 |
+| `onClick?`  | `() => void`                                                          | -          | Actions when you click the button                                      |

@@ -5,7 +5,7 @@
   <p align="center">
     Component Library for Korol Social Network
     <br />
-    <a href="https://www.chromatic.com/library?appId=61844bd90419aa003a551961">View Demo</a>
+    <a href="https://61844bd90419aa003a551961-krbtntbggg.chromatic.com/?path=/story/user-avatar--active">View Demo</a>
     ·
     <a href="https://github.com/Volodya-Korol/korol-social-network-component-library/issues">Report Bug</a>
     ·

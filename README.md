@@ -1,10 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
+  <img src="https://i.ibb.co/VxjhLt7/logo.png" alt="Logo" width="100" height="80">
   <p align="center">
     Component Library for Korol Social Network
     <br />
-    <a href="">View Demo <strong>link on demo</strong></a>
+    <a href="https://www.chromatic.com/library?appId=61844bd90419aa003a551961">View Demo</a>
     ·
     <a href="https://github.com/Volodya-Korol/korol-social-network-component-library/issues">Report Bug</a>
     ·

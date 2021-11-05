@@ -1,10 +1,12 @@
 {
   "name": "korol-social-network-component-library",
   "author": "Volodya Korol",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": "https://github.com/Volodya-Korol/korol-social-network-component-library",
+  "homepage": "https://github.com/Volodya-Korol/korol-social-network-component-library#readme",
   "files": [
     "dist"
   ],

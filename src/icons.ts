@@ -1,4 +1,6 @@
-export const icons: iconsT.RootObject = {
+import { RootObject } from './icons.types';
+
+export const icons: RootObject = {
   activity: {
     fillRule: 'nonzero',
     clipRule: 'nonzero',

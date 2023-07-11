@@ -1248,6 +1248,21 @@
   "resolved" "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz"
   "version" "0.2.5"
 
+"@figspec/components@^1.0.1":
+  "integrity" "sha512-UvnEamPEAMh9HExViqpobWmX25g1+soA9kcJu+It3VerMa7CeVyaIbQydNf1Gys5v/rxJVdTDRgQ7OXW2zAAig=="
+  "resolved" "https://registry.npmjs.org/@figspec/components/-/components-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "lit" "^2.1.3"
+
+"@figspec/react@^1.0.0":
+  "integrity" "sha512-r683qOko+5CbT48Ox280fMx2MNAtaFPgCNJvldOqN3YtmAzlcTT+YSxd3OahA+kjXGGrnzDbUgeTOX1cPLII+g=="
+  "resolved" "https://registry.npmjs.org/@figspec/react/-/react-1.0.3.tgz"
+  "version" "1.0.3"
+  dependencies:
+    "@figspec/components" "^1.0.1"
+    "@lit-labs/react" "^1.0.2"
+
 "@gar/promisify@^1.0.1":
   "integrity" "sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw=="
   "resolved" "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.2.tgz"
@@ -1476,6 +1491,23 @@
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
     "chalk" "^4.0.0"
+
+"@lit-labs/react@^1.0.2":
+  "integrity" "sha512-DiZdJYFU0tBbdQkfwwRSwYyI/mcWkg3sWesKRsHUd4G+NekTmmeq9fzsurvcKTNVa0comNljwtg4Hvi1ds3V+A=="
+  "resolved" "https://registry.npmjs.org/@lit-labs/react/-/react-1.2.1.tgz"
+  "version" "1.2.1"
+
+"@lit-labs/ssr-dom-shim@^1.0.0", "@lit-labs/ssr-dom-shim@^1.1.0":
+  "integrity" "sha512-kXOeFbfCm4fFf2A3WwVEeQj55tMZa8c8/f9AKHMobQMkzNUfUj+antR3fRPaZJawsa1aZiP/Da3ndpZrwEe4rQ=="
+  "resolved" "https://registry.npmjs.org/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.1.1.tgz"
+  "version" "1.1.1"
+
+"@lit/reactive-element@^1.3.0", "@lit/reactive-element@^1.6.0":
+  "integrity" "sha512-rDfl+QnCYjuIGf5xI2sVJWdYIi56CTCwWa+nidKYX6oIuBYwUbT/vX4qbUDlHiZKJ/3FRNQ/tWJui44p6/stSA=="
+  "resolved" "https://registry.npmjs.org/@lit/reactive-element/-/reactive-element-1.6.2.tgz"
+  "version" "1.6.2"
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.0.0"
 
 "@mdx-js/loader@^1.6.22":
   "integrity" "sha512-9CjGwy595NaxAYp0hF9B/A0lH6C8Rms97e2JS9d3jVUtILn6pT5i5IV965ra3lIWc7Rs1GG1tBdVF7dCowYe6Q=="
@@ -1708,6 +1740,28 @@
     "style-loader" "^2.0.0"
     "webpack" "^4.44.1"
     "webpack-bundle-analyzer" "^4.4.2"
+
+"@storybook/addon-a11y@^6.3.12":
+  "integrity" "sha512-q1NdRHFJV6sLEEJw0hatCc5ZIthELqM/AWdrEWDyhcJNyiq7Tq4nKqQBMTQSYwHiUAmxVgw7i4oa1vM2M51/3g=="
+  "resolved" "https://registry.npmjs.org/@storybook/addon-a11y/-/addon-a11y-6.3.12.tgz"
+  "version" "6.3.12"
+  dependencies:
+    "@storybook/addons" "6.3.12"
+    "@storybook/api" "6.3.12"
+    "@storybook/channels" "6.3.12"
+    "@storybook/client-api" "6.3.12"
+    "@storybook/client-logger" "6.3.12"
+    "@storybook/components" "6.3.12"
+    "@storybook/core-events" "6.3.12"
+    "@storybook/theming" "6.3.12"
+    "axe-core" "^4.2.0"
+    "core-js" "^3.8.2"
+    "global" "^4.4.0"
+    "lodash" "^4.17.20"
+    "react-sizeme" "^3.0.1"
+    "regenerator-runtime" "^0.13.7"
+    "ts-dedent" "^2.0.0"
+    "util-deprecate" "^1.0.2"
 
 "@storybook/addon-actions@6.3.12":
   "integrity" "sha512-mzuN4Ano4eyicwycM2PueGzzUCAEzt9/6vyptWEIVJu0sjK0J9KtBRlqFi1xGQxmCfimDR/n/vWBBkc7fp2uJA=="
@@ -2903,6 +2957,11 @@
   "resolved" "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.7.tgz"
   "version" "1.0.7"
 
+"@types/trusted-types@^2.0.2":
+  "integrity" "sha512-NfQ4gyz38SL8sDNrSixxU2Os1a5xcdFxipAFxYEuLUlvU2uDwS4NUpsImcf1//SlWItCVMMLiylsxbmNMToV/g=="
+  "resolved" "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.3.tgz"
+  "version" "2.0.3"
+
 "@types/uglify-js@*":
   "integrity" "sha512-EGkrJD5Uy+Pg0NUR8uA4bJ5WMfljyad0G+784vLCNUkD+QwOJXUbBYExXfVGf7YtyzdQp3L/XMYcliB987kL5Q=="
   "resolved" "https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.13.0.tgz"
@@ -3619,7 +3678,7 @@
   "resolved" "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz"
   "version" "1.11.0"
 
-"axe-core@^4.0.2":
+"axe-core@^4.0.2", "axe-core@^4.2.0":
   "integrity" "sha512-OKRkKM4ojMEZRJ5UNJHmq9tht7cEnRnqKG6KyB/trYws00Xtkv12mHtlJ0SK7cmuNbrU8dPUova3ELTuilfBbw=="
   "resolved" "https://registry.npmjs.org/axe-core/-/axe-core-4.2.2.tgz"
   "version" "4.2.2"
@@ -8959,6 +9018,31 @@
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz"
   "version" "1.1.6"
 
+"lit-element@^3.3.0":
+  "integrity" "sha512-xXAeVWKGr4/njq0rGC9dethMnYCq5hpKYrgQZYTzawt9YQhMiXfD+T1RgrdY3NamOxwq2aXlb0vOI6e29CKgVQ=="
+  "resolved" "https://registry.npmjs.org/lit-element/-/lit-element-3.3.2.tgz"
+  "version" "3.3.2"
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.1.0"
+    "@lit/reactive-element" "^1.3.0"
+    "lit-html" "^2.7.0"
+
+"lit-html@^1.4.1 || ^2.0.0-rc.3", "lit-html@^2.7.0":
+  "integrity" "sha512-YqUzpisJodwKIlbMFCtyrp58oLloKGnnPLMJ1t23cbfIJjg/H9pvLWK4XS69YeubK5HUs1UE4ys9w5dP1zg6IA=="
+  "resolved" "https://registry.npmjs.org/lit-html/-/lit-html-2.7.5.tgz"
+  "version" "2.7.5"
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+"lit@^2.0.0-rc.1", "lit@^2.1.3":
+  "integrity" "sha512-1amFHA7t4VaaDe+vdQejSVBklwtH9svGoG6/dZi9JhxtJBBlqY5D1RV7iLUYY0trCqQc4NfhYYZilZiVHt7Hxg=="
+  "resolved" "https://registry.npmjs.org/lit/-/lit-2.7.6.tgz"
+  "version" "2.7.6"
+  dependencies:
+    "@lit/reactive-element" "^1.6.0"
+    "lit-element" "^3.3.0"
+    "lit-html" "^2.7.0"
+
 "load-json-file@^4.0.0":
   "integrity" "sha1-L19Fq5HjMhYjT9U62rZo607AmTs="
   "resolved" "https://registry.npmjs.org/load-json-file/-/load-json-file-4.0.0.tgz"
@@ -11410,7 +11494,7 @@
     "object-assign" "^4.1.1"
     "prop-types" "^15.6.2"
 
-"react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1", "react@^16.13.1 || ^17.0.0", "react@^16.6.0 || ^17.0.0", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.8.4 || ^17.0.0", "react@^17.0.2", "react@>= 0.14.0", "react@>= 16.3.0", "react@>= 16.8.0", "react@>=16.12.0", "react@>=16.3.0", "react@>=16.8.0", "react@15.x || 16.x || 16.4.0-alpha.0911da3", "react@17.0.2":
+"react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1", "react@^16.13.1 || ^17.0.0", "react@^16.14.0 || ^17.0.0 || ^18.0.0", "react@^16.6.0 || ^17.0.0", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.8.4 || ^17.0.0", "react@>= 0.14.0", "react@>= 16.3.0", "react@>= 16.8.0", "react@>=16", "react@>=16.12.0", "react@>=16.3.0", "react@>=16.8.0", "react@15.x || 16.x || 16.4.0-alpha.0911da3", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -12718,6 +12802,13 @@
   "integrity" "sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw=="
   "resolved" "https://registry.npmjs.org/store2/-/store2-2.12.0.tgz"
   "version" "2.12.0"
+
+"storybook-addon-designs@^6.3.1":
+  "integrity" "sha512-QCHZp4KuUikOq52MPiMfU8QifYTfhHar5vWlbcfkFDz1YrgGMy+QAEt5Y3Vdnffl4GKSK1lAsLuvTuzqTBRvnw=="
+  "resolved" "https://registry.npmjs.org/storybook-addon-designs/-/storybook-addon-designs-6.3.1.tgz"
+  "version" "6.3.1"
+  dependencies:
+    "@figspec/react" "^1.0.0"
 
 "storybook-addon-outline@^1.4.1":
   "integrity" "sha512-Qvv9X86CoONbi+kYY78zQcTGmCgFaewYnOVR6WL7aOFJoW7TrLiIc/O4hH5X9PsEPZFqjfXEPUPENWVUQim6yw=="

@@ -35,7 +35,10 @@ const S = {
 
 const Slot: React.FC<{}> = () => null;
 
-const Footer = ({ children, ...props }: Props & React.HTMLAttributes<HTMLDivElement>) => {
+const Footer = ({
+  children,
+  ...props
+}: Props & React.HTMLAttributes<HTMLDivElement>) => {
   const childrenArray = (children as unknown) as React.ReactElement[];
   return (
     <S.Bar {...props}>

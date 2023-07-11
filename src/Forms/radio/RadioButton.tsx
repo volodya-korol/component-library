@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-
-import { theme } from '../../theme';
 import Icon from '../../Icon/Icon';
+import { theme } from '../../theme';
+
 
 type Props = {
   checked: boolean;

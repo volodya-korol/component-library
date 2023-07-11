@@ -81,9 +81,9 @@ export const AllIcon = (args: keyof typeof Icon) => {
 	const [coping, setCoping] = useState(false);
 
 	let copy = (icon: string) => {
-		let { size = "medium", fill = "EE8777", block = false, style = {}, label = ["", {}] } = args;
+		let { size = "medium", fill = "EE8777", style = {}, label = ["", {}] } = args;
 
-		const copyString = `<Icon icon='${icon}' size={${size}} fill={'${fill}'}  block={${block}} style={${JSON.stringify(
+		const copyString = `<Icon icon='${icon}' size={${size}} fill={'${fill}'} style={${JSON.stringify(
 			style
 		)}} label={${JSON.stringify(label)}}  />`;
 

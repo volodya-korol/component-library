@@ -1,6 +1,6 @@
 import { ComponentStory } from "@storybook/react";
 
-import { theme } from "../";
+import { theme } from "../src";
 export default {
 	title: "General/Typography",
 	argTypes: {

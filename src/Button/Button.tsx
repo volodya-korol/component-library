@@ -2,9 +2,14 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { theme } from '..';
 
-
 interface Props {
-  model?: 'default' | 'primary' | 'secondary' | 'light' | 'dark';
+  model?:
+    | 'default'
+    | 'defaultWhite'
+    | 'primary'
+    | 'secondary'
+    | 'light'
+    | 'dark';
   shape?: 'default' | 'circle' | 'round';
   size?: { type: 'small' | 'medium' | 'large'; width?: string | number };
   icon?: [React.ReactNode, 'left' | 'right'];
@@ -50,7 +55,7 @@ const S = {
       fontWeight: size.fontWeight,
       border: model.border,
       borderRadius:
-        shape === 'circle' ? '23px' : shape === 'round' ? '50%' : 'none',
+        shape === 'circle' ? '23px' : shape === 'round' ? '50%' : '8px',
       cursor: disabled ? 'default' : 'pointer',
       '&::before': {
         display: disabled ? 'inline' : 'none',
@@ -105,7 +110,7 @@ const Button: FC<Props> = ({
     };
     return sizeAliasToValue[size?.type || 'large'];
   };
-  const resolveType = (type: Props['model']) => {
+  const resolveModel = (type: Props['model']) => {
     const typeAliasToValue: {
       [key: string]: resolverTypes;
     } = {
@@ -114,8 +119,17 @@ const Button: FC<Props> = ({
         bgColor: 'white',
         border: '1px solid ' + theme.color.primary,
       },
+      defaultWhite: {
+        color: theme.color.white,
+        bgColor: theme.color.primary,
+        border: '1px solid ' + theme.color.white,
+      },
       primary: { color: 'white', bgColor: theme.color.primary, border: 'none' },
-      secondary: { color: theme.color.gray, bgColor: theme.color.light, border: 'none' },
+      secondary: {
+        color: theme.color.gray,
+        bgColor: theme.color.light,
+        border: 'none',
+      },
       light: { color: 'black', bgColor: 'white', border: 'none' },
       dark: { color: 'white', bgColor: 'black', border: 'none' },
     };
@@ -129,7 +143,7 @@ const Button: FC<Props> = ({
   return (
     <S.Button
       type={type}
-      model={resolveType(model)}
+      model={resolveModel(model)}
       shape={shape}
       ghost={ghost}
       disabled={disabled}

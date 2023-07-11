@@ -32,7 +32,7 @@ const S = {
     position: relative;
     padding: 7px 5px 15px 0px;
     display: grid;
-    grid-template-columns: 1fr 60px;
+    grid-template-columns: 1fr 0px;
     border-bottom: 1px solid #efeff4;
     text-decoration: none;
   `,

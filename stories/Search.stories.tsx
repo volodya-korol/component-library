@@ -13,5 +13,6 @@ const Template: ComponentStory<typeof Search> = (args) => <Search {...args}></Se
 export const SearchInp = Template.bind({});
 
 SearchInp.args = {
-	label: "Search//...",
+	onClickSearch: () => {},
+	placeholder: "hello"
 };

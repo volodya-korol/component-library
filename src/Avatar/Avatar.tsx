@@ -8,8 +8,9 @@ interface Props {
   img?: string;
   model: 'online' | 'stories' | 'avatar' | 'new';
   shape: 'default' | 'circle';
+  borderColor?: string;
   size: number;
-};
+}
 
 const S = {
   Avatar: styled.div<{
@@ -17,7 +18,8 @@ const S = {
     size: number;
     shape?: Props['shape'];
     model?: Props['model'];
-  }>({}, ({ shape, model, img, size }) => ({
+    color?: string;
+  }>({}, ({ shape, model, color = theme.color.primary, img, size }) => ({
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
@@ -57,20 +59,21 @@ const S = {
             boxSizing: 'border-box',
             width: size,
             height: size,
-            border: (((size * 10) / 48) * 2) / 10 + 'px solid orange' || 'none',
+            border:
+              (((size * 10) / 48) * 2) / 10 + `px solid ${color}` || 'none',
             borderRadius: shape === 'circle' ? '50%' : '16%',
           }
         : '',
   })),
 };
 
-const Avatar = ({ img, model, size = 480, shape }: Props) => {
+const Avatar = ({ img, model, size = 480, borderColor, shape }: Props) => {
   return model === 'new' ? (
     <S.Avatar shape={shape} size={size}>
       <Icon size={size - 10} fill={theme.color.dark} icon="plus" />
     </S.Avatar>
   ) : (
-    <S.Avatar model={model} shape={shape} img={img} size={size} />
+    <S.Avatar model={model} color={borderColor} shape={shape} img={img} size={size} />
   );
 };
 export default Avatar;

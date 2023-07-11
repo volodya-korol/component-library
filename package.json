@@ -1,7 +1,7 @@
 {
   "name": "korol-social-network-component-library",
   "author": "Volodya Korol",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -11,7 +11,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16.16.0"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -26,8 +26,7 @@
     "chromatic": "npx chromatic --project-token=c67c63940ef8"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "styled-components": ">= 5"
+    "react": ">=16"
   },
   "husky": {
     "hooks": {
@@ -39,6 +38,11 @@
     "semi": true,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -55,11 +59,10 @@
     "babel-loader": "^8.2.2",
     "chromatic": "^6.0.5",
     "husky": "^6.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+
+
     "react-is": "^17.0.2",
     "size-limit": "^4.12.0",
-    "styled-components": "^5.3.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.0",
     "typescript": "4.2.4"

@@ -26,7 +26,7 @@ const Rating = ({
 	const [ratingValue, setRatingValue] = useState(Number(rating));
 	const [hoverValue, setHoverValue] = useState(0);
 	return (
-		<>
+		<div style={{display: "flex"}}>
 			{Array.from({ length: 5 }, (_, i) => (
 				<span
 					key={i}
@@ -51,7 +51,7 @@ const Rating = ({
 					/>
 				</span>
 			))}
-		</>
+		</div>
 	);
 };
 

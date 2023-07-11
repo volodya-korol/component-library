@@ -16,4 +16,5 @@ Active.args = {
 	model: "avatar",
 	shape: "default",
 	size: 220,
+	borderColor: "black"
 };

@@ -11,7 +11,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=10"
   },
   "scripts": {
     "start": "tsdx watch",
